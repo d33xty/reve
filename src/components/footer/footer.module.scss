@@ -1,0 +1,33 @@
+.footer{
+    background-color: rgb(66, 66, 66);
+    padding: 2rem;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &_text_container{
+        margin-left: 1rem;
+        display: flex;
+        & p{
+            display: flex;
+            align-items: center;
+            &:first-child{
+                border-right: 1px solid #FFF;
+                padding: 0 1rem 0 0;
+                margin-right: 1rem;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px){
+    .footer{
+        flex-direction: column;
+
+        &_text_container{
+            margin-top: 1rem;
+        }
+    }
+}

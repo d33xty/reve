@@ -1,0 +1,11 @@
+.logo {
+  font-size: 2rem;
+  padding-bottom: 0.2rem;
+  text-transform: uppercase;
+
+  & span {
+    font-weight: 400;
+    text-transform: lowercase;
+    border-bottom: 1px solid;
+  }
+}

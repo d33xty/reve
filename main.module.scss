@@ -1,0 +1,127 @@
+main {
+  padding: 0 1rem;
+}
+
+.banner__principal {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & h1 {
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+    font-size: 1.7rem;
+    padding: 0 0.5rem;
+    max-width: 35%;
+  }
+}
+
+.produtos__container{
+  padding: 2rem;
+
+  & p{
+    margin-bottom: .5rem;
+  }
+
+  &_filter{
+    margin-bottom: 1rem;
+  }
+}
+
+.products_list{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+.item{
+  max-width: 400px;
+  padding: 1rem;
+  box-sizing: border-box;
+  
+  & img{
+    background-color: rgba(218, 218, 218, 0.664);
+    max-width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+  }
+
+  &_valor{
+    font-weight: 600;
+  }
+}
+
+.banner__secundario{
+  display: flex;
+  background-color: rgba(218, 218, 218, 0.452);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  
+  &_titulo_container{
+    border-right: 1px solid #000;
+  }
+
+  &_titulo{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &_texto{
+    width: 90%;
+    text-align: justify;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-right: 1rem;
+
+    & span{
+      font-weight: 600;
+    }
+  }
+
+  &_imagem{
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .banner__principal{
+    & h1{
+      max-width: 100%;
+    }
+  }
+
+  .banner__secundario{
+    flex-direction: column;
+    &_imagem{
+      margin-top: 1rem;
+    }
+
+    &_titulo_container{
+      padding: none;
+      border: none;
+      text-align: center;
+    }
+
+    &_texto{
+      width: 100%;
+      text-align: center;
+      padding-right: 0px;
+    }
+  }
+}
